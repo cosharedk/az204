@@ -1,8 +1,8 @@
 # Værktøjer
 Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - her er installation-guides til de fleste af dem:
 
-- Visual Studio Community Edition
-- Visual Studio Code
+- [Visual Studio Community Edition](https://visualstudio.microsoft.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - Installer PowerShell modulet til Azure
 - Afinstaller det gamle PowerShell-modul (AzureRM)
 - Installer BASH for Windows til Azure
@@ -10,8 +10,7 @@ Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - h
 
 # Certificerings-links
 Til de der skal certificeres, bruger jeg følgende links:
-- MeasureUp
-- 
+- [MeasureUp](https://www.measureup.com)
 
 # Module 01: Creating Azure App Service Web Apps
 
@@ -35,6 +34,10 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 04: Develop solutions that use Cosmos DB storage
 # Module 05: Implement IaaS solutions
 # Module 06: Implement user authentication and authorization
+
+## Kodeeksempler
+- Der er et eksempel på oAuth via en app-registrering i [VMStartUp-function-appen](../source/Training.AZ204/Training.AZ204.Functions/Functions/VMStartUp.cs)
+
 # Module 07: Implement secure cloud solutions
 # Module 08: Implement API Management
 # Module 09: Develop App Service Logic Apps
