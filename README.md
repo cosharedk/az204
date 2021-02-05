@@ -2,4 +2,4 @@
 
 Her lidt forskelligt til AZ-204-kurset:
 
-- [Links](Documents/Links.md)
+- [Linksamling](Documents/Links.md)
