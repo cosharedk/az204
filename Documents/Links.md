@@ -11,7 +11,7 @@
 ## Kodeeksempler
 I function-app-projektet i demo-koden findes en del eksempler på Azure-functions i praksis:
 
-- VMStartUp - starter og stopper de virtuelle maskiner i en bestemt resource-gruppe
+- [VMStartUp](../source/Training.AZ204/Training.AZ204.Functions/fimctopms/../Functions/VMStartUp.cs) - starter og stopper de virtuelle maskiner i en bestemt resource-gruppe
 - VMShutDown - starter og stopper de virtuelle maskiner i en bestemt resource-gruppe
 - BlobTrigger - eksekverer, når der lander en blob i en storage account
 - QueueTrigger - eksekverer, når der lander en besked på køen
