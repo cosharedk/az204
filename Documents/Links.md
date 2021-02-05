@@ -1,3 +1,18 @@
+# Værktøjer
+Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - her er installation-guides til de fleste af dem:
+
+- Visual Studio Community Edition
+- Visual Studio Code
+- Installer PowerShell modulet til Azure
+- Afinstaller det gamle PowerShell-modul (AzureRM)
+- Installer BASH for Windows til Azure
+- Storage Account Explorer
+
+# Certificerings-links
+Til de der skal certificeres, bruger jeg følgende links:
+- MeasureUp
+- 
+
 # Module 01: Creating Azure App Service Web Apps
 
 # Module 02: Implement Azure Functions
