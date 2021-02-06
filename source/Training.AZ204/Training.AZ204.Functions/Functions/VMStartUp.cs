@@ -13,7 +13,15 @@ namespace Training.AZ204.Functions.Functions
     public static class VMStartUp
     {
         [FunctionName("VMStartUp")]
-        public static void Run([TimerTrigger("0 0 8 * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 0 8 * * *"
+            
+            //Nedenstående sørger for at funktionen starter ved startup, når der bebugges, så man ikke skal vente til klokken 8 :-)
+
+            #if DEBUG
+            , RunOnStartup=true 
+            #endif
+
+            )]TimerInfo myTimer, ILogger log)
         {
 
             log.LogInformation($"VMStartUp initiated at: {DateTime.Now}");
@@ -23,7 +31,7 @@ namespace Training.AZ204.Functions.Functions
             string clientId = System.Environment.GetEnvironmentVariable("VMAdminClientId");
             string clientSecret = System.Environment.GetEnvironmentVariable("VMAdminClientSecret");
 
-            var context =SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
+            var context = SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
 
             var azure = Azure.Configure()
                 .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
@@ -34,7 +42,7 @@ namespace Training.AZ204.Functions.Functions
 
             foreach (var vm in vms)
             {
-                if (vm.PowerState == PowerState.Running)
+                if (vm.PowerState == PowerState.Stopped || vm.PowerState == PowerState.Deallocated)
                 {
                     log.LogInformation($"Starting VM {vm.Name} in resource group {vm.ResourceGroupName}");
                     vm.Start();
