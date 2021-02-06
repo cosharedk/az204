@@ -18,7 +18,7 @@
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2018-02-01",
             "location":"[resourceGroup().location]",
-            "name" : "App Service Plan",
+            "name" : "AppServicePlan",
             "sku": {
                 "name":"S1",
                 "tier":"Shared"
