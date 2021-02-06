@@ -47,3 +47,5 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 11: Develop message-based solutions
 # Module 12: Instrument solutions to support monitoring and logging
 # Module 13: Integrate caching and content delivery within solutions
+## Links
+[Quickstart: Use Azure Cache for Redis with an ASP.NET web app](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto)
