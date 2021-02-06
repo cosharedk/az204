@@ -28,7 +28,7 @@
             "location":"[resourceGroup().location]",
             "name": "[variables('webappname')]",
             "properties": {
-                "serverFarmId":"id": "[resourceId('Microsoft.Web/serverfarms', 'training-az204-webhosting')]"
+                "serverFarmId":"[resourceId('Microsoft.Web/serverfarms', 'training-az204-webhosting')]"
                 
             }
             
