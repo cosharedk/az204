@@ -18,7 +18,7 @@
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2018-02-01",
             "location":"[resourceGroup().location]",
-            "name" : "AppServicePlan",
+            "name" : "training-az204-webhosting",
             "sku": {
                 "name":"S1",
                 "tier":"Shared"
