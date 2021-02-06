@@ -9,9 +9,7 @@
     },
     "variables": {
         "webappname":"[concat('web-application-',parameters('postfix'))]"
-
     },
-
 
     "resources": [
         {
@@ -23,9 +21,14 @@
                 "name":"S1",
                 "tier":"Shared"
             }
+        },
+        {
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2018-11-01",
+            "location":"[resourceGroup().location]",
+            "name": "[variables('webappname')]"
+            
             
         }
-
-
     ]
 }
