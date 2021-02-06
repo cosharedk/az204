@@ -27,11 +27,21 @@
             "apiVersion": "2018-11-01",
             "location":"[resourceGroup().location]",
             "name": "[variables('webappname')]",
+            
             "properties": {
                 "serverFarmId":"[resourceId('Microsoft.Web/serverfarms', 'training-az204-webhosting')]"
                 
             }
             
+        },
+        {
+            "type": "Microsoft.Web/sites/sourcecontrols",
+            "apiVersion": "2018-11-01",
+            "properties": {
+                "repoUrl":"https://github.com/cosharedk/az204.git",
+                "branch":"main"
+            }
         }
+        
     ]
 }
