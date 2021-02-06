@@ -37,6 +37,8 @@
         {
             "type": "Microsoft.Web/sites/sourcecontrols",
             "apiVersion": "2018-11-01",
+            "name":"deployment",
+            "location":"[resourceGroup().location]",
             "properties": {
                 "repoUrl":"https://github.com/cosharedk/az204.git",
                 "branch":"main"
