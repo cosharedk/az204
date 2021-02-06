@@ -7,6 +7,7 @@ using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace Training.AZ204.Functions.Functions
 {
@@ -16,7 +17,6 @@ namespace Training.AZ204.Functions.Functions
         public static void Run([TimerTrigger("0 0 8 * * *"
             
             //Nedenstående sørger for at funktionen starter ved startup, når der bebugges, så man ikke skal vente til klokken 8 :-)
-
             #if DEBUG
             , RunOnStartup=true 
             #endif
@@ -31,6 +31,7 @@ namespace Training.AZ204.Functions.Functions
             string clientId = System.Environment.GetEnvironmentVariable("VMAdminClientId");
             string clientSecret = System.Environment.GetEnvironmentVariable("VMAdminClientSecret");
 
+            //Registrer din egen app og giv rettigheder til den til den resource, resource group eller subscription, den skal anvendes på.
             var context = SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
 
             var azure = Azure.Configure()
@@ -38,6 +39,7 @@ namespace Training.AZ204.Functions.Functions
                 .Authenticate(context)
                 .WithDefaultSubscription();
 
+            //Henter alle vm's - men kan filtreres på bl.a. tags med Linq.
             var vms = azure.VirtualMachines.List();
 
             foreach (var vm in vms)
