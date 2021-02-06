@@ -6,7 +6,8 @@ Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - h
 - Installer PowerShell modulet til Azure
 - Afinstaller det gamle PowerShell-modul (AzureRM)
 - Installer BASH for Windows til Azure
-- Storage Account Explorer
+- Storage Account Explorer - er indbygget i portalen i vore dage, men kan hentes som desktop-progam.
+- func for .net til functions
 
 # Certificerings-links
 Til de der skal certificeres, bruger jeg følgende links:
@@ -19,6 +20,7 @@ Til de der skal certificeres, bruger jeg følgende links:
 ## Links
 
 - [Create your first function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) - basal begynder guide til at lave en Azure Function i Visual Studio med C#
+- [Develop Azure Functions by using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp)
 - [Azure Functions – Time Trigger (CRON) Cheat Sheet](https://arminreiter.com/2017/02/azure-functions-time-trigger-cron-cheat-sheet/) - lidt hjælp til at lave CRON expressions til Timer-baserede functions
 - [Azure Functions time zone issue](https://www.serverlessnotes.com/docs/azure-functions-time-zone-issue) - få Azure Functions til at eksekvere i den tidszone, du gerne vil have den til.
 
