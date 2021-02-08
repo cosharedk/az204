@@ -38,6 +38,9 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - QueueTrigger - eksekverer, når der lander en besked på køen
   
 # Module 03: Develop solutions that use blob storage
+
+Test
+
 # Module 04: Develop solutions that use Cosmos DB storage
 # Module 05: Implement IaaS solutions
 # Module 06: Implement user authentication and authorization
