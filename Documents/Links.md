@@ -3,11 +3,11 @@ Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - h
 
 - [Visual Studio Community Edition](https://visualstudio.microsoft.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- Installer PowerShell modulet til Azure
+- [Installer AZ-PowerShell modulet til Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-5.4.0)
 - Afinstaller det gamle PowerShell-modul (AzureRM)
 - [Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli) - hvad skal installeres og hvordan skriver jeg mine første scripts i CLI
-- Storage Account Explorer - er indbygget i portalen i vore dage, men kan hentes som desktop-progam.
-- func for .net til functions
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) - er indbygget i portalen i vore dage, men kan hentes som desktop-progam.
+- [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools)
 
 # Certificerings-links
 Til de der skal certificeres, bruger jeg følgende links:
