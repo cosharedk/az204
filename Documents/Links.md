@@ -20,6 +20,9 @@ Til de der skal certificeres, bruger jeg følgende links:
 - [Docker Build: A Beginner’s Guide to Building Docker Images](https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/)
 - [Set up staging environments in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)
 
+## Labs
+- [Lab: Building a web application on Azure platform as a service offerings](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab_ak.md) - Den officielle lab til modul 1
+
 # Module 02: Implement Azure Functions
 
 ## Links
