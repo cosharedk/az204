@@ -40,7 +40,9 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 03: Develop solutions that use blob storage
 
 ## Links
-[Quickstart: Azure Blob Storage client library v12 for .NET](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet)
+- [Quickstart: Azure Blob storage client library v11 for .NET](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet-legacy) - legacy udgaven af starter guiden - v12 nedenfor bør anvendes i stedet!
+- [Quickstart: Azure Blob Storage client library v12 for .NET](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet) - starter guide med den nye (fra 2020) 
+- 
 
 # Module 04: Develop solutions that use Cosmos DB storage
 # Module 05: Implement IaaS solutions
