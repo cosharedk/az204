@@ -7,7 +7,7 @@ Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - h
 - Afinstaller det gamle PowerShell-modul (AzureRM)
 - [Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli) - hvad skal installeres og hvordan skriver jeg mine første scripts i CLI
 - [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) - er indbygget i portalen i vore dage, men kan hentes som desktop-progam.
-- [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools)
+- [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) - core tools til Azure Functions, hvis man skal lave dem i Visual Studio Code
 
 # Certificerings-links
 Til de der skal certificeres, bruger jeg følgende links:
