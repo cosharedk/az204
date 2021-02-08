@@ -15,6 +15,11 @@ Til de der skal certificeres, bruger jeg følgende links:
 
 # Module 01: Creating Azure App Service Web Apps
 
+## Links
+- [Docker Build: A Beginner’s Guide to Building Docker Images](https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/)
+- [Set up staging environments in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)
+
+
 # Module 02: Implement Azure Functions
 
 ## Links
@@ -27,7 +32,7 @@ Til de der skal certificeres, bruger jeg følgende links:
 ## Kodeeksempler
 I function-app-projektet i demo-koden findes en del eksempler på Azure-functions i praksis:
 
-- [VMStartUp](../source/Training.AZ204/Training.AZ204.Functions/fimctopms/../Functions/VMStartUp.cs) - starter og stopper de virtuelle maskiner i en bestemt resource-gruppe
+- [VMStartUp](../source/Training.AZ204/Training.AZ204.Functions/fimctopms/../Functions/VMStartUp.cs) - starter de virtuelle maskiner i en bestemt resource-gruppe
 - VMShutDown - starter og stopper de virtuelle maskiner i en bestemt resource-gruppe
 - BlobTrigger - eksekverer, når der lander en blob i en storage account
 - QueueTrigger - eksekverer, når der lander en besked på køen
