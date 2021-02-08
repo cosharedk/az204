@@ -11,14 +11,14 @@ Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - h
 
 # Certificerings-links
 Til de der skal certificeres, bruger jeg følgende links:
-- [MeasureUp](https://www.measureup.com)
+- [MeasureUp](https://www.measureup.com) - generator med eksamens-spørgsmål
+- [Pluralsight](https://www.pluralsight.com) - videotjeneste med tons-vis af instruktions-videoer om blandt meget andet Azure
 
 # Module 01: Creating Azure App Service Web Apps
 
 ## Links
 - [Docker Build: A Beginner’s Guide to Building Docker Images](https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/)
 - [Set up staging environments in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)
-
 
 # Module 02: Implement Azure Functions
 
