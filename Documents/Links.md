@@ -39,7 +39,11 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - VMShutDown - starter og stopper de virtuelle maskiner i en bestemt resource-gruppe
 - BlobTrigger - eksekverer, når der lander en blob i en storage account
 - QueueTrigger - eksekverer, når der lander en besked på køen
-  
+
+## Labs
+- [Lab: Implementing task processing logic by using Azure Functions
+](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_02_lab_ak.md)
+
 # Module 03: Develop solutions that use blob storage
 
 ## Links
