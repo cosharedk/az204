@@ -39,7 +39,8 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
   
 # Module 03: Develop solutions that use blob storage
 
-Test
+## Links
+[Quickstart: Azure Blob Storage client library v12 for .NET](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet)
 
 # Module 04: Develop solutions that use Cosmos DB storage
 # Module 05: Implement IaaS solutions
