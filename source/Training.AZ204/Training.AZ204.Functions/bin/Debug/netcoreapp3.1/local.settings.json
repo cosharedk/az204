@@ -1,0 +1,10 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "TenantId": "c668587d-9c92-4714-8813-9ceb0b28750d",
+    "VMAdminClientId": "3f1972a1-39cf-4e73-bfb7-ad9de1be81a0",
+    "VMAdminClientSecret": "flRS~wrI-QqHKm83BV.pmvg5O_tsX-0M14"
+  }
+}
