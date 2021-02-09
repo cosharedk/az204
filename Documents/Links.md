@@ -53,7 +53,7 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 ## Kodeeksempler
 
 - [MVC projekt med list blobs](../source/Training.AZ204/Training.AZ204.WebApp/../Training.AZ204.WebSite/Controllers/BlobController.cs) - et eksempel der lister alle blobs i en container
-
+- [BlobListener](../source/Training.AZ204/Training.AZ204.Functions/functions/BlobListener.cs) - Azure Function der lytter til en container og reagerer
 
 # Module 04: Develop solutions that use Cosmos DB storage
 # Module 05: Implement IaaS solutions

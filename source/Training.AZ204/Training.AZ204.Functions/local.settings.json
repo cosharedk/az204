@@ -5,6 +5,7 @@
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "TenantId": "c668587d-9c92-4714-8813-9ceb0b28750d",
     "VMAdminClientId": "3f1972a1-39cf-4e73-bfb7-ad9de1be81a0",
-    "VMAdminClientSecret": "flRS~wrI-QqHKm83BV.pmvg5O_tsX-0M14"
+    "VMAdminClientSecret": "flRS~wrI-QqHKm83BV.pmvg5O_tsX-0M14",
+    "StorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=dti01022021;AccountKey=eeioOm6guKlvxrcFJHLGqCcH/JzV5Pd1Q8GgAF3j9PKu3ZJcgbzXjvOykx6he1UipvS3l3sZ6aAgv/+ZWLVhqw==;EndpointSuffix=core.windows.net"
   }
 }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.AZ204.Functions", "Training.AZ204.Functions\Training.AZ204.Functions.csproj", "{75D563F3-D57B-4550-B7C3-00A8138CDC03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.AZ204.Functions", "Training.AZ204.Functions\Training.AZ204.Functions.csproj", "{75D563F3-D57B-4550-B7C3-00A8138CDC03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.AZ204.WebSite", "Training.AZ204.WebSite\Training.AZ204.WebSite.csproj", "{4661EDD9-ADA5-4E43-9CD7-462006F189CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.AZ204.WebSite", "Training.AZ204.WebSite\Training.AZ204.WebSite.csproj", "{4661EDD9-ADA5-4E43-9CD7-462006F189CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
