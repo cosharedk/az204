@@ -59,10 +59,17 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 
 ## Links
 
+
+
+
 ## Kodeeksempler
 
 
 # Module 05: Implement IaaS solutions
+
+## Links
+- [Quick start templates](https://github.com/Azure/azure-quickstart-templates)
+
 # Module 06: Implement user authentication and authorization
 
 ## Kodeeksempler
