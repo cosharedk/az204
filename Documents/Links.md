@@ -56,6 +56,12 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - [BlobListener](../source/Training.AZ204/Training.AZ204.Functions/functions/BlobListener.cs) - Azure Function der lytter til en container og reagerer
 
 # Module 04: Develop solutions that use Cosmos DB storage
+
+## Links
+
+## Kodeeksempler
+
+
 # Module 05: Implement IaaS solutions
 # Module 06: Implement user authentication and authorization
 
