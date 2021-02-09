@@ -12,6 +12,9 @@ namespace Training.AZ204.Functions.Functions
         public static void Run([BlobTrigger("filerne/{name}", Connection = "StorageConnectionString")]Stream myBlob, string name, ILogger log)
         {
             log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
+
+            
+
         }
     }
 }
