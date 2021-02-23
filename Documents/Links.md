@@ -68,7 +68,7 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 05: Implement IaaS solutions
 
 ## Links
-- [Quick start templates](https://github.com/Azure/azure-quickstart-templates)
+- [Quick start templates](https://github.com/Azure/azure-quickstart-templates) - en række ARM-templates klar til brug eller inspiration 
 
 # Module 06: Implement user authentication and authorization
 
@@ -80,6 +80,10 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 09: Develop App Service Logic Apps
 # Module 10: Develop event-based solutions
 # Module 11: Develop message-based solutions
+
+## Links
+- [Send messages to an Azure Service Bus topic and receive messages from subscriptions to the topic (.NET)](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions)
+- [Get started with Azure Queue Storage using .NET](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet)
 # Module 12: Instrument solutions to support monitoring and logging
 # Module 13: Integrate caching and content delivery within solutions
 ## Links
