@@ -65,13 +65,7 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 
 ### Links
 
-<<<<<<< HEAD
 ## Kodeeksempler
-=======
-
-### Kodeeksempler
-
->>>>>>> 9710b388655b9dd02b038c235f82a2f7cc282c7c
 
 ## Module 05: Implement IaaS solutions
 
