@@ -1,6 +1,6 @@
 # Links til AZ 204 - developing Azure Solutions
 
-Her listen over links og værktøjer til AZ-204-kurset, jeg plejer at bruge som guideline  - har du tilføjelser eller kommentarer, er du velkommen til at sende dem på [pmn@coshare.dk](mailto:pmn@coshare.dk) - så skal jeg få dem på listen, hvis jeg mener de passer ind!
+Her listen over links og værktøjer til AZ-204-kurset, jeg plejer at bruge som guideline  - har du tilføjelser eller kommentarer, er du velkommen til at sende [en mail](mailto:pmn@coshare.dk) - så skal jeg få dem på listen, hvis jeg mener de passer ind!
 
 ## Værktøjer
 Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - her er installation-guides til de fleste af dem:
@@ -109,9 +109,15 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - [Application Insights for ASP.NET Core applications](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core)
 - [Using Search in Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/diagnostic-search)
 
+### Labs
+- [Monitoring services that are deployed to Azure](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_12_lab_ak.md)
 
 
 ## Module 13: Integrate caching and content delivery within solutions
 ### Links
-[Quickstart: Use Azure Cache for Redis with an ASP.NET web app](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto)
+- [Quickstart: Use Azure Cache for Redis with an ASP.NET web app](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto)
+- [Quickstart: Create an Azure CDN profile and endpoint](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint)
 
+### Labs
+
+- [Enhancing a web application by using the Azure Content Delivery Network](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_13_lab_ak.md)

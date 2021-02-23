@@ -38,7 +38,7 @@ namespace Training.AZ204.WebSIte.Controllers
 
             TimeSpan timeSpan = endTime - startTime;
 
-            telemetryClient.TrackMetric("DetTogTid", timeSpan.Seconds);
+            telemetryClient.TrackMetric("DetTogTid", timeSpan.TotalSeconds);
 
             try
             {
