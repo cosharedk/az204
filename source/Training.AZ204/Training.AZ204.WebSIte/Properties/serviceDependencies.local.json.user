@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2021-02-23T10:15:02.3113581Z"
+    },
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2021-02-23T10:15:38.3368045Z"
+    }
+  },
+  "parameters": {
+    "appInsights1.subscriptionId": {
+      "Name": "appInsights1.subscriptionId",
+      "Type": "subscription",
+      "Value": "82088be5-2755-49c9-b043-c670bef65ac6"
+    },
+    "appInsights1.resourceGroupName": {
+      "Name": "appInsights1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Teknologisk"
+    }
+  }
+}

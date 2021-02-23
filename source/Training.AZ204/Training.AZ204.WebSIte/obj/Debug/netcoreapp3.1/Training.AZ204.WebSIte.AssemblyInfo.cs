@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5214fe7a-e054-4c2a-b354-fe4a39a06cf0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Training.AZ204.WebSIte")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
