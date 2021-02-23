@@ -76,6 +76,12 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - Der er et eksempel på oAuth via en app-registrering i [VMStartUp-function-appen](../source/Training.AZ204/Training.AZ204.Functions/Functions/VMStartUp.cs)
 
 # Module 07: Implement secure cloud solutions
+
+## Links
+- [Tutorial: Use a managed identity to connect Key Vault to an Azure web app in .NET](https://docs.microsoft.com/en-us/azure/key-vault/general/tutorial-net-create-vault-azure-web-app)
+
+
+
 # Module 08: Implement API Management
 # Module 09: Develop App Service Logic Apps
 # Module 10: Develop event-based solutions
@@ -84,9 +90,6 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - [Quickstart: Route custom events to web endpoint with the Azure portal and Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart-portal)
 - [Tutorial: Respond to Azure Service Bus events received via Azure Event Grid by using Azure Logic Apps](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-example)
 
-
-
-
 # Module 11: Develop message-based solutions
 
 ## Links
@@ -94,6 +97,10 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 - [Get started with Azure Queue Storage using .NET](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet)
 - [How to Send Email Using SendGrid with Azure](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email)
 # Module 12: Instrument solutions to support monitoring and logging
+
+## Links
+- [Application Insights for ASP.NET Core applications](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core)
+
 # Module 13: Integrate caching and content delivery within solutions
 ## Links
 [Quickstart: Use Azure Cache for Redis with an ASP.NET web app](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto)
