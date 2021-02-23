@@ -60,8 +60,6 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 ## Links
 
 
-
-
 ## Kodeeksempler
 
 
