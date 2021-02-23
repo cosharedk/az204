@@ -33,8 +33,8 @@ namespace Training.AZ204.Functions.Functions
 
             //Registrer din egen app og giv rettigheder til den til den resource, resource group eller subscription, den skal anvendes på.
             var context = SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
-            /*
-            var azure = Azure.Configure()
+            
+            var azure = Microsoft.Azure.Management.Fluent.Azure.Configure()
                 .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                 .Authenticate(context)
                 .WithDefaultSubscription();
@@ -54,7 +54,7 @@ namespace Training.AZ204.Functions.Functions
                     log.LogInformation($"{vm.Name} is currently not in running-state");
                 }
             }
-            */
+            
             log.LogInformation($"VMStartUp ended at: {DateTime.Now}");
 
         }

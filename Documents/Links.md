@@ -98,7 +98,11 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 
 ## Links
 - [Application Insights for ASP.NET Core applications](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core)
+- [Using Search in Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/diagnostic-search)
+
+
 
 # Module 13: Integrate caching and content delivery within solutions
 ## Links
 [Quickstart: Use Azure Cache for Redis with an ASP.NET web app](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto)
+
