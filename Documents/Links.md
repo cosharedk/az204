@@ -79,6 +79,14 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 08: Implement API Management
 # Module 09: Develop App Service Logic Apps
 # Module 10: Develop event-based solutions
+
+## Links
+- [Quickstart: Route custom events to web endpoint with the Azure portal and Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart-portal)
+- [Tutorial: Respond to Azure Service Bus events received via Azure Event Grid by using Azure Logic Apps](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-example)
+
+
+
+
 # Module 11: Develop message-based solutions
 
 ## Links
