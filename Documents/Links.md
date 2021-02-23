@@ -49,6 +49,7 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 ## Links
 - [Quickstart: Azure Blob storage client library v11 for .NET](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet-legacy) - legacy udgaven af starter guiden - v12 nedenfor bør anvendes i stedet!
 - [Quickstart: Azure Blob Storage client library v12 for .NET](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet) - starter guide med den nye (fra 2020) 
+- [Azure Storage Explorer (desktop version)](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
 ## Kodeeksempler
 
@@ -58,8 +59,6 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 # Module 04: Develop solutions that use Cosmos DB storage
 
 ## Links
-
-
 
 
 ## Kodeeksempler
@@ -79,8 +78,7 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 
 ## Links
 - [Tutorial: Use a managed identity to connect Key Vault to an Azure web app in .NET](https://docs.microsoft.com/en-us/azure/key-vault/general/tutorial-net-create-vault-azure-web-app)
-
-
+- [Use Key Vault references for App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references)
 
 # Module 08: Implement API Management
 # Module 09: Develop App Service Logic Apps
