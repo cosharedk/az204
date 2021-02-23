@@ -9,9 +9,8 @@ namespace Training.AZ204.Functions.Functions
     public static class ServiceBusSenderFunction
     {
         [FunctionName("ServiceBusSender")]
-        public static void Run([TimerTrigger("*/5 * * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("*/10 * * * * *")]TimerInfo myTimer, ILogger log)
         {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
             //Sends information to servicebus quqye
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
@@ -20,7 +19,6 @@ namespace Training.AZ204.Functions.Functions
 
             string connectionString = System.Environment.GetEnvironmentVariable("ServiceBusConnectionString");
             string topicName = "orders";
-            string subScriptionName = "orderhandling";
 
             ServiceBusClient serviceBusClient = new ServiceBusClient(connectionString);
 

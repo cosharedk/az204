@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,11 @@ namespace Training.AZ204.WebSIte.Controllers
 {
     public class HomeController : Controller
     {
+
+        private TelemetryClient telemetryClient = new TelemetryClient(TelemetryConfiguration.CreateDefault());
+
+
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -20,6 +27,30 @@ namespace Training.AZ204.WebSIte.Controllers
 
         public IActionResult Index()
         {
+
+            telemetryClient.TrackPageView("Forsiden");
+
+            DateTime startTime = DateTime.Now;
+
+            System.Threading.Thread.Sleep(5000);
+
+            DateTime endTime = DateTime.Now;
+
+            TimeSpan timeSpan = endTime - startTime;
+
+            telemetryClient.TrackMetric("DetTogTid", timeSpan.Seconds);
+
+            try
+            {
+                string[] numbers = { "One", "Two" };
+                string number = numbers[2];
+            }
+            catch (Exception ex)
+            {
+                telemetryClient.TrackException(ex);
+                
+            }
+
             return View();
         }
 

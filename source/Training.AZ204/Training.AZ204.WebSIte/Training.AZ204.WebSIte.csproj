@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>5214fe7a-e054-4c2a-b354-fe4a39a06cf0</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/82088be5-2755-49c9-b043-c670bef65ac6/resourceGroups/Teknologisk/providers/microsoft.insights/components/dti22022021-web</ApplicationInsightsResourceId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+  </ItemGroup>
 
 </Project>

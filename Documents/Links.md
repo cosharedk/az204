@@ -1,5 +1,7 @@
 # Links til AZ 204 - developing Azure Solutions
 
+Her listen over links og værktøjer til AZ-204-kurset, jeg plejer at bruge som guideline  - har du tilføjelser eller kommentarer, er du velkommen til at sende dem på [pmn@coshare.dk](mailto:pmn@coshare.dk) - så skal jeg få dem på listen, hvis jeg mener de passer ind!
+
 ## Værktøjer
 Jeg bruger en del værktøjer i min undervisning, der gør hverdagen lettere - her er installation-guides til de fleste af dem:
 
