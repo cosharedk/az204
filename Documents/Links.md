@@ -84,6 +84,7 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 ## Links
 - [Send messages to an Azure Service Bus topic and receive messages from subscriptions to the topic (.NET)](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions)
 - [Get started with Azure Queue Storage using .NET](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet)
+- [How to Send Email Using SendGrid with Azure](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email)
 # Module 12: Instrument solutions to support monitoring and logging
 # Module 13: Integrate caching and content delivery within solutions
 ## Links
