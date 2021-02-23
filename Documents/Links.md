@@ -118,8 +118,8 @@ I function-app-projektet i demo-koden findes en del eksempler på Azure-function
 ## Module 13: Integrate caching and content delivery within solutions
 ### Links
 - [Quickstart: Use Azure Cache for Redis with an ASP.NET web app](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto)
+- [Quickstart: Create an Azure CDN profile and endpoint](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint)
 
 ### Labs
 
 - [Enhancing a web application by using the Azure Content Delivery Network](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_13_lab_ak.md)
-
