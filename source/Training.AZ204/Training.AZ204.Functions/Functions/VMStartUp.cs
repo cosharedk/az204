@@ -16,7 +16,7 @@ namespace Training.AZ204.Functions.Functions
         [FunctionName("VMStartUp")]
         public static void Run([TimerTrigger("0 0 8 * * *"
             
-            //Nedenstående sørger for at funktionen starter ved startup, når der bebugges, så man ikke skal vente til klokken 8 :-)
+            //Nedenstående sørger for at funktionen starter ved startup, når der bebugges, så man ikke skal vente til klokken 8
             #if DEBUG
             , RunOnStartup=true 
             #endif
@@ -33,11 +33,15 @@ namespace Training.AZ204.Functions.Functions
 
             //Registrer din egen app og giv rettigheder til den til den resource, resource group eller subscription, den skal anvendes på.
             var context = SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
-            
+
+            context = SdkContext.AzureCredentialsFactory.FromMSI(new MSILoginInformation(MSIResourceType.AppService),AzureEnvironment.AzureGlobalCloud);
+
+            //context = SdkContext.AzureCredentialsFactory.FromSystemAssignedManagedServiceIdentity(MSIResourceType.AppService, AzureEnvironment.AzureGlobalCloud);
+
             var azure = Microsoft.Azure.Management.Fluent.Azure.Configure()
                 .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                 .Authenticate(context)
-                .WithDefaultSubscription();
+                .WithSubscription("384d8b5c-5dd7-413e-aff1-df640d84aacf");
 
             //Henter alle vm's - men kan filtreres på bl.a. tags med Linq.
             var vms = azure.VirtualMachines.List();

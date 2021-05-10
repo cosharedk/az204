@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.AZ204.Functions", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.AZ204.WebSIte", "Training.AZ204.WebSIte\Training.AZ204.WebSIte.csproj", "{7E6FF580-F3D4-4753-8EE0-3AFAFCDB1E23}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{86344437-D440-42A4-904B-591E207121C9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Training.AZ204.DatabaseProject", "Training.AZ204.DatabaseProject\Training.AZ204.DatabaseProject.sqlproj", "{05F00D96-F498-4A3C-A404-0B4C1071ACBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,18 @@ Global
 		{7E6FF580-F3D4-4753-8EE0-3AFAFCDB1E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E6FF580-F3D4-4753-8EE0-3AFAFCDB1E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E6FF580-F3D4-4753-8EE0-3AFAFCDB1E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05F00D96-F498-4A3C-A404-0B4C1071ACBD} = {86344437-D440-42A4-904B-591E207121C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B94E8760-7DF0-415D-B2AD-E05621A22B7C}

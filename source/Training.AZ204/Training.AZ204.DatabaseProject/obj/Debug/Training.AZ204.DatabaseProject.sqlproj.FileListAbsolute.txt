@@ -1,0 +1,6 @@
+C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.dacpac
+C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.dll
+C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.pdb
+C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.sqlprojAssemblyReference.cache
+C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.dll
+C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.pdb
