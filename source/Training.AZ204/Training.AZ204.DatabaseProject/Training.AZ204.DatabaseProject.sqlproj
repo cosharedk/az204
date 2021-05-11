@@ -61,6 +61,8 @@
   <ItemGroup>
     <Build Include="Tables\Invoice.sql" />
     <Build Include="Tables\Customer.sql" />
+    <Build Include="Tables\OrderHeader.sql" />
+    <Build Include="Tables\OrderDetails.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Training.AZ204.DatabaseProject.publish.xml" />

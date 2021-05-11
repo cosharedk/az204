@@ -1,0 +1,18 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[OrderDetails] (Table)
+       [dbo].[OrderHeader] (Table)
+       [dbo].[FK_OrderDetails_ToÓrderHeader] (Foreign Key)
+       [dbo].[FK_OrderHeader_ToCustomer] (Foreign Key)
+
+** Supporting actions
