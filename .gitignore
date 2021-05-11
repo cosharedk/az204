@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/source/Training.AZ204/Training.AZ204.DatabaseProject/Training.AZ204.DatabaseProject.dbmdl
