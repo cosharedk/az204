@@ -9,7 +9,7 @@ namespace Training.AZ204.Functions.Functions
     public static class ServiceBusSenderFunction
     {
         [FunctionName("ServiceBusSender")]
-        public static void Run([TimerTrigger("*/10 * * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 */10 * * * *")]TimerInfo myTimer, ILogger log)
         {
 
             //Sends information to servicebus quqye

@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Training.AZ204.DatabaseProject", "Training.AZ204.DatabaseProject\Training.AZ204.DatabaseProject.sqlproj", "{05F00D96-F498-4A3C-A404-0B4C1071ACBD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{142CE483-B00A-4D60-A969-2219318ACDD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

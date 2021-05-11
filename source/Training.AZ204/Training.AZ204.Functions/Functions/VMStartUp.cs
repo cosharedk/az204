@@ -8,13 +8,16 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using System.Linq;
+using System.IO;
 
 namespace Training.AZ204.Functions.Functions
 {
     public static class VMStartUp
     {
         [FunctionName("VMStartUp")]
-        public static void Run([TimerTrigger("0 0 8 * * *"
+        [return: Queue("vms", Connection = "StorageConnectionString")]
+        
+        public static string Run([TimerTrigger("0 0 8 * * *"
             
             //Nedenstående sørger for at funktionen starter ved startup, når der bebugges, så man ikke skal vente til klokken 8
             #if DEBUG
@@ -34,9 +37,8 @@ namespace Training.AZ204.Functions.Functions
             //Registrer din egen app og giv rettigheder til den til den resource, resource group eller subscription, den skal anvendes på.
             var context = SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
 
-            context = SdkContext.AzureCredentialsFactory.FromMSI(new MSILoginInformation(MSIResourceType.AppService),AzureEnvironment.AzureGlobalCloud);
-
-            //context = SdkContext.AzureCredentialsFactory.FromSystemAssignedManagedServiceIdentity(MSIResourceType.AppService, AzureEnvironment.AzureGlobalCloud);
+            //alternativt kan managed identity anvendes
+            //context = SdkContext.AzureCredentialsFactory.FromMSI(new MSILoginInformation(MSIResourceType.AppService),AzureEnvironment.AzureGlobalCloud);
 
             var azure = Microsoft.Azure.Management.Fluent.Azure.Configure()
                 .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
@@ -61,6 +63,7 @@ namespace Training.AZ204.Functions.Functions
             
             log.LogInformation($"VMStartUp ended at: {DateTime.Now}");
 
+            return "VMs started";
         }
     }
 }

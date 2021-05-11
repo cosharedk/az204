@@ -6,7 +6,7 @@
     "TenantId": "c4458263-8197-48f8-8e40-ce727981d222",
     "VMAdminClientId": "f42a031a-0e87-4229-b5f5-b9215a030d16",
     "VMAdminClientSecret": "RmxkU3_5a066NilUn_nc_1QVBL7cnruYf-",
-    "StorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=storageaccounttekno9a2c;AccountKey=y2wL0gkXKmeeCjsR6mM+UNnZb2/I+CWzXZxBW8nymIxnXYSCBnRxFhf9iZztixVEOiEkpzB76HvG063Ofsc18Q==;EndpointSuffix=core.windows.net",
+    "StorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=dti09052021;AccountKey=XfPOONxVObvXAWg+De76XAIZ81MRPt9aUwYCtt6n6++FqTajDbwGuRUg5otVKA+7jWsRVcZx0hIKCcWNkIDfPA==;EndpointSuffix=core.windows.net",
     "ServiceBusConnectionString": "Endpoint=sb://dti20222021.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=pM0UFWCueX8mEi/XiM9YMwPEOHD7WJmtZtWxB2GTjCM=",
     "ServiceBusTopicName": "orders",
     "ServiceBusSubsctiptionName": "orderhandling"
