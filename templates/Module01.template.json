@@ -8,7 +8,8 @@
         }
     },
     "variables": {
-        "webappname":"[concat('web-application-',parameters('postfix'))]"
+        "webappname":"[concat('web-application-',parameters('postfix'))]",
+        "serverfarmname":"[concat('server-farm-',parameters('postfix'))]"
     },
 
     "resources": [
@@ -16,7 +17,7 @@
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2018-02-01",
             "location":"[resourceGroup().location]",
-            "name" : "training-az204-webhosting",
+            "name" : "[variables('serverfarmname')]",
             "sku": {
                 "name":"S1",
                 "tier":"Shared"
@@ -26,24 +27,15 @@
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
             "location":"[resourceGroup().location]",
+            "dependsOn":["server-farm-pemu"],
             "name": "[variables('webappname')]",
             
             "properties": {
-                "serverFarmId":"[resourceId('Microsoft.Web/serverfarms', 'training-az204-webhosting')]"
-                
+                "serverFarmId":"[resourceId('Microsoft.Web/serverfarms',variables('serverfarmname'))]",
+                "RepoUrl": "https://github.com/cosharedk/az204.git",
+                "branch": "main",
+                "IsManualIntegration": true   
             }
-            
-        },
-        {
-            "type": "Microsoft.Web/sites/sourcecontrols",
-            "apiVersion": "2018-11-01",
-            "name":"web-application-pmn/deployment",
-            "location":"[resourceGroup().location]",
-            "properties": {
-                "repoUrl":"https://github.com/cosharedk/az204.git",
-                "branch":"main"
-            }
-        }
-        
+        }        
     ]
 }

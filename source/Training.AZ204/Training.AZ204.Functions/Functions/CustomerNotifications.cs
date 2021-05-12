@@ -24,7 +24,6 @@ namespace Training.AZ204.Functions.Functions
 
             var customers = context.Customers.OrderBy(m => m.Name);
 
-
             foreach (var customer in customers)
             {
                 log.LogInformation(customer.Name);
