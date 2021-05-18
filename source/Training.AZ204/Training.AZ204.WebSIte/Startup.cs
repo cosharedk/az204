@@ -28,7 +28,7 @@ namespace Training.AZ204.WebSIte
             services.AddControllersWithViews();
             services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
 
-            services.AddDbContext<MiniInvoiceContext>(options => options.UseSqlServer("Server=tcp:dti09052021.database.windows.net,1433;Initial Catalog=MiniInvoiceSystem;Persist Security Info=False;User ID=peter;Password=Password2021;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));        
+            services.AddDbContext<MiniInvoiceContext>(options => options.UseSqlServer("Server=tcp:dti17052021.database.windows.net,1433;Initial Catalog=MiniInvoiceSystem;Persist Security Info=False;User ID=peter;Password=Password2021;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

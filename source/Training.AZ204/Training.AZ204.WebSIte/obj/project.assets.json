@@ -9767,25 +9767,22 @@
   },
   "packageFolders": {
     "C:\\Users\\peter\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj",
+      "projectUniqueName": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj",
       "projectName": "Training.AZ204.WebSIte",
-      "projectPath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj",
+      "projectPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\obj\\",
+      "outputPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9867,7 +9864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

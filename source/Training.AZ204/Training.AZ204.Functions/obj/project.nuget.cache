@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "JJiNuGpR9gdTNGWtTUZtb6t7gyC1YGZQvNncDNA5TM+wXHUl9wCLZSx1m73wYcfHdkPZKGPJjZJYbb71fBQaeA==",
+  "dgSpecHash": "1Hti9q5FYmCbqPwJSIqEM6mGS3XDLyq8+FQTkAS/5php1Xxxqb0NHhEaawDvMEK13ezwOCk5KP//vlDg3wFBIg==",
   "success": true,
-  "projectFilePath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
+  "projectFilePath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\peter\\.nuget\\packages\\azure.core\\1.8.1\\azure.core.1.8.1.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\antlr\\3.4.1.9004\\antlr.3.4.1.9004.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\azure.core\\1.9.0\\azure.core.1.9.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\azure.core.amqp\\1.0.0\\azure.core.amqp.1.0.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\azure.messaging.servicebus\\7.1.0\\azure.messaging.servicebus.7.1.0.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\azure.storage.blobs\\12.9.0-beta.1\\azure.storage.blobs.12.9.0-beta.1.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\azure.storage.common\\12.8.0-beta.1\\azure.storage.common.12.8.0-beta.1.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\azure.storage.queues\\12.7.0-beta.1\\azure.storage.queues.12.7.0-beta.1.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.applicationinsights\\2.15.0\\microsoft.applicationinsights.2.15.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.applicationinsights.aspnetcore\\2.15.0\\microsoft.applicationinsights.aspnetcore.2.15.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.applicationinsights.dependencycollector\\2.15.0\\microsoft.applicationinsights.dependencycollector.2.15.0.nupkg.sha512",
@@ -273,7 +277,29 @@
     "C:\\Users\\peter\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\webgrease\\1.6.0\\webgrease.1.6.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Antlr 3.4.1.9004' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Antlr",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebGrease 1.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "WebGrease",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

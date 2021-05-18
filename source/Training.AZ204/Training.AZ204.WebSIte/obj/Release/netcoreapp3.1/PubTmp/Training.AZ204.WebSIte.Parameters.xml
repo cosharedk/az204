@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="dti22022021-web" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\data\\git\\az204\\source\\Training\.AZ204\\Training\.AZ204\.WebSIte\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="dti17052021" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^F:\\git\\az204\\az204\\source\\Training\.AZ204\\Training\.AZ204\.WebSIte\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

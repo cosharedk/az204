@@ -5,9 +5,12 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.1.0" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.9.0-beta.1" />
+    <PackageReference Include="Azure.Storage.Queues" Version="12.7.0-beta.1" />
     <PackageReference Include="Microsoft.Azure.Management.Fluent" Version="1.37.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.10" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.11" />
+    <PackageReference Include="WebGrease" Version="1.6.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Training.AZ204.WebSIte\Training.AZ204.WebSIte.csproj" />

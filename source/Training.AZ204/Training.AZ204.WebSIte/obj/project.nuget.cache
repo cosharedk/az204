@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MxrWCCh+Nh6Z2n47kizRnK6WZvPhP6o39ZAZIfWXt83hrtHYlFiNugcnpo+hDaddNkrrl/N+xMZftMAqN6+DYQ==",
+  "dgSpecHash": "MTN7TM+a5AJ+w2HyPi00b2hCxhNBwj4GgtLz0kKtu0LrcNBuH4h1qcnxC8RQuk9Kt3Puq3/kQo92m/RVLaIrqA==",
   "success": true,
-  "projectFilePath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj",
+  "projectFilePath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.applicationinsights\\2.15.0\\microsoft.applicationinsights.2.15.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.applicationinsights.aspnetcore\\2.15.0\\microsoft.applicationinsights.aspnetcore.2.15.0.nupkg.sha512",

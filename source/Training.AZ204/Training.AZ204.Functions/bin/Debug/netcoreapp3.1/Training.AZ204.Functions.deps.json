@@ -9,29 +9,41 @@
       "Training.AZ204.Functions/1.0.0": {
         "dependencies": {
           "Azure.Messaging.ServiceBus": "7.1.0",
+          "Azure.Storage.Blobs": "12.9.0-beta.1",
+          "Azure.Storage.Queues": "12.7.0-beta.1",
           "Microsoft.Azure.Management.Fluent": "1.37.0",
           "Microsoft.Azure.WebJobs.Extensions.Storage": "3.0.10",
           "Microsoft.NET.Sdk.Functions": "3.0.11",
-          "Training.AZ204.WebSIte": "1.0.0"
+          "Training.AZ204.WebSIte": "1.0.0",
+          "WebGrease": "1.6.0"
         },
         "runtime": {
           "Training.AZ204.Functions.dll": {}
         }
       },
-      "Azure.Core/1.8.1": {
+      "Antlr/3.4.1.9004": {
+        "runtime": {
+          "lib/Antlr3.Runtime.dll": {
+            "assemblyVersion": "3.4.1.9004",
+            "fileVersion": "3.4.1.9004"
+          }
+        }
+      },
+      "Azure.Core/1.9.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Buffers": "4.5.0",
           "System.Diagnostics.DiagnosticSource": "4.7.1",
           "System.Memory": "4.5.4",
+          "System.Memory.Data": "1.0.1",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Json": "4.6.0",
           "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Core.dll": {
-            "assemblyVersion": "1.8.1.0",
-            "fileVersion": "1.800.121.6102"
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.900.21.10502"
           }
         }
       },
@@ -48,7 +60,7 @@
       },
       "Azure.Messaging.ServiceBus/7.1.0": {
         "dependencies": {
-          "Azure.Core": "1.8.1",
+          "Azure.Core": "1.9.0",
           "Azure.Core.Amqp": "1.0.0",
           "Microsoft.Azure.Amqp": "2.4.9",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -58,6 +70,42 @@
           "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {
             "assemblyVersion": "7.1.0.0",
             "fileVersion": "7.100.21.10902"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.9.0-beta.1": {
+        "dependencies": {
+          "Azure.Storage.Common": "12.8.0-beta.1",
+          "System.Text.Json": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {
+            "assemblyVersion": "12.9.0.0",
+            "fileVersion": "12.900.21.10902"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.8.0-beta.1": {
+        "dependencies": {
+          "Azure.Core": "1.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Common.dll": {
+            "assemblyVersion": "12.8.0.0",
+            "fileVersion": "12.800.21.10902"
+          }
+        }
+      },
+      "Azure.Storage.Queues/12.7.0-beta.1": {
+        "dependencies": {
+          "Azure.Storage.Common": "12.8.0-beta.1",
+          "System.Memory.Data": "1.0.1",
+          "System.Text.Json": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Queues.dll": {
+            "assemblyVersion": "12.7.0.0",
+            "fileVersion": "12.700.21.10902"
           }
         }
       },
@@ -3072,6 +3120,18 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "WebGrease/1.6.0": {
+        "dependencies": {
+          "Antlr": "3.4.1.9004",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/WebGrease.dll": {
+            "assemblyVersion": "1.6.5135.21930",
+            "fileVersion": "1.6.5135.21930"
+          }
+        }
+      },
       "WindowsAzure.Storage/9.3.3": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -3105,12 +3165,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Azure.Core/1.8.1": {
+    "Antlr/3.4.1.9004": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BoGOCcdRa4ngAxBcyyndauFWgId6/SETDJnd9+4iHtXZ9JsVA4hs8pvK0H2ml4MHWwaYPmpepd70reAUm2u52g==",
-      "path": "azure.core/1.8.1",
-      "hashPath": "azure.core.1.8.1.nupkg.sha512"
+      "sha512": "sha512-c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
+      "path": "antlr/3.4.1.9004",
+      "hashPath": "antlr.3.4.1.9004.nupkg.sha512"
+    },
+    "Azure.Core/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jr5JP47RPM5i2kqgc1oNaRq29sm6/AOog/XRkis3gwuwyTblT+PR7PLhOeab3UPtYLwnppQRfY16pgnTJk5HOw==",
+      "path": "azure.core/1.9.0",
+      "hashPath": "azure.core.1.9.0.nupkg.sha512"
     },
     "Azure.Core.Amqp/1.0.0": {
       "type": "package",
@@ -3125,6 +3192,27 @@
       "sha512": "sha512-aume+od0QIc0xadIm07MHVFU13YUiR/0Do43V8Do9TN5wfzWVsWH30ZABdx0EqTBIa9WV0rZmSL5XX5tQ6w0tg==",
       "path": "azure.messaging.servicebus/7.1.0",
       "hashPath": "azure.messaging.servicebus.7.1.0.nupkg.sha512"
+    },
+    "Azure.Storage.Blobs/12.9.0-beta.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f/0EEb6QoYjjZs4wJcK5uCfhMf7B3NhSpREzKUHw+1TZ/CV08TD98rp1YsSPIP5wfTkimx2LzNPMsiPYrTyUOg==",
+      "path": "azure.storage.blobs/12.9.0-beta.1",
+      "hashPath": "azure.storage.blobs.12.9.0-beta.1.nupkg.sha512"
+    },
+    "Azure.Storage.Common/12.8.0-beta.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PKzWcQHJ2iJ7dFLOokAY25VCK2KotZn74a+xMp2V1Dt6toUf/r/LxOFVeSQK1oXIIMTq6AUxXf6f7CRWzURWHw==",
+      "path": "azure.storage.common/12.8.0-beta.1",
+      "hashPath": "azure.storage.common.12.8.0-beta.1.nupkg.sha512"
+    },
+    "Azure.Storage.Queues/12.7.0-beta.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-koVlzY7X/xxebRXEO42IcQph2R2JTX8apHO6NyZp5zQLjNB4/Njb0E1TBQLt2ToOhgzaS4qZsj3nJIdhfwKMoQ==",
+      "path": "azure.storage.queues/12.7.0-beta.1",
+      "hashPath": "azure.storage.queues.12.7.0-beta.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.15.0": {
       "type": "package",
@@ -4987,6 +5075,13 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "WebGrease/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1d29edoh4IZPLig82coowiPBS1ltxT97PwEIkOk0dHqtJwD9v5C7gPm6Ot1hKHT86otKm04oDQ00x5c+PyVyxw==",
+      "path": "webgrease/1.6.0",
+      "hashPath": "webgrease.1.6.0.nupkg.sha512"
     },
     "WindowsAzure.Storage/9.3.3": {
       "type": "package",

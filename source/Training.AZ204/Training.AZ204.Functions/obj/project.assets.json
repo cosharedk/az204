@@ -2,13 +2,23 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Azure.Core/1.8.1": {
+      "Antlr/3.4.1.9004": {
+        "type": "package",
+        "compile": {
+          "lib/Antlr3.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/Antlr3.Runtime.dll": {}
+        }
+      },
+      "Azure.Core/1.9.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
           "System.Buffers": "4.5.0",
           "System.Diagnostics.DiagnosticSource": "4.6.0",
           "System.Memory": "4.5.3",
+          "System.Memory.Data": "1.0.1",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Json": "4.6.0",
           "System.Threading.Tasks.Extensions": "4.5.2"
@@ -46,6 +56,45 @@
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {}
+        }
+      },
+      "Azure.Storage.Blobs/12.9.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.8.0-beta.1",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {}
+        }
+      },
+      "Azure.Storage.Common/12.8.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.9.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Storage.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Common.dll": {}
+        }
+      },
+      "Azure.Storage.Queues/12.7.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.8.0-beta.1",
+          "System.Memory.Data": "1.0.1",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Storage.Queues.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Queues.dll": {}
         }
       },
       "Microsoft.ApplicationInsights/2.15.0": {
@@ -4353,6 +4402,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WebGrease/1.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Antlr": "3.4.1.9004",
+          "Newtonsoft.Json": "5.0.4"
+        },
+        "compile": {
+          "lib/WebGrease.dll": {}
+        },
+        "runtime": {
+          "lib/WebGrease.dll": {}
+        }
+      },
       "WindowsAzure.Storage/9.3.3": {
         "type": "package",
         "dependencies": {
@@ -4390,16 +4452,29 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.8.1": {
-      "sha512": "BoGOCcdRa4ngAxBcyyndauFWgId6/SETDJnd9+4iHtXZ9JsVA4hs8pvK0H2ml4MHWwaYPmpepd70reAUm2u52g==",
+    "Antlr/3.4.1.9004": {
+      "sha512": "c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
       "type": "package",
-      "path": "azure.core/1.8.1",
+      "path": "antlr/3.4.1.9004",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr.3.4.1.9004.nupkg.sha512",
+        "antlr.nuspec",
+        "lib/Antlr3.Runtime.dll",
+        "lib/Antlr3.Runtime.pdb"
+      ]
+    },
+    "Azure.Core/1.9.0": {
+      "sha512": "Jr5JP47RPM5i2kqgc1oNaRq29sm6/AOog/XRkis3gwuwyTblT+PR7PLhOeab3UPtYLwnppQRfY16pgnTJk5HOw==",
+      "type": "package",
+      "path": "azure.core/1.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.8.1.nupkg.sha512",
+        "azure.core.1.9.0.nupkg.sha512",
         "azure.core.nuspec",
         "lib/net461/Azure.Core.dll",
         "lib/net461/Azure.Core.xml",
@@ -4439,6 +4514,54 @@
         "azure.messaging.servicebus.nuspec",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Storage.Blobs/12.9.0-beta.1": {
+      "sha512": "f/0EEb6QoYjjZs4wJcK5uCfhMf7B3NhSpREzKUHw+1TZ/CV08TD98rp1YsSPIP5wfTkimx2LzNPMsiPYrTyUOg==",
+      "type": "package",
+      "path": "azure.storage.blobs/12.9.0-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.blobs.12.9.0-beta.1.nupkg.sha512",
+        "azure.storage.blobs.nuspec",
+        "lib/netstandard2.0/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Storage.Common/12.8.0-beta.1": {
+      "sha512": "PKzWcQHJ2iJ7dFLOokAY25VCK2KotZn74a+xMp2V1Dt6toUf/r/LxOFVeSQK1oXIIMTq6AUxXf6f7CRWzURWHw==",
+      "type": "package",
+      "path": "azure.storage.common/12.8.0-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.common.12.8.0-beta.1.nupkg.sha512",
+        "azure.storage.common.nuspec",
+        "lib/netstandard2.0/Azure.Storage.Common.dll",
+        "lib/netstandard2.0/Azure.Storage.Common.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Storage.Queues/12.7.0-beta.1": {
+      "sha512": "koVlzY7X/xxebRXEO42IcQph2R2JTX8apHO6NyZp5zQLjNB4/Njb0E1TBQLt2ToOhgzaS4qZsj3nJIdhfwKMoQ==",
+      "type": "package",
+      "path": "azure.storage.queues/12.7.0-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.queues.12.7.0-beta.1.nupkg.sha512",
+        "azure.storage.queues.nuspec",
+        "lib/netstandard2.0/Azure.Storage.Queues.dll",
+        "lib/netstandard2.0/Azure.Storage.Queues.xml",
         "pkgicon.png"
       ]
     },
@@ -12538,6 +12661,20 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "WebGrease/1.6.0": {
+      "sha512": "1d29edoh4IZPLig82coowiPBS1ltxT97PwEIkOk0dHqtJwD9v5C7gPm6Ot1hKHT86otKm04oDQ00x5c+PyVyxw==",
+      "type": "package",
+      "path": "webgrease/1.6.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/WebGrease.dll",
+        "tools/WG.EXE",
+        "webgrease.1.6.0.nupkg.sha512",
+        "webgrease.nuspec"
+      ]
+    },
     "WindowsAzure.Storage/9.3.3": {
       "sha512": "VUV8j6dzkU/7vDgk5k+ob5g7nnch2fNByr0p9aOxMGFGk+tAnTehrZ4qnClF04CVozP1GNN2zrnbsxCmr+iZBg==",
       "type": "package",
@@ -12571,33 +12708,33 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Azure.Messaging.ServiceBus >= 7.1.0",
+      "Azure.Storage.Blobs >= 12.9.0-beta.1",
+      "Azure.Storage.Queues >= 12.7.0-beta.1",
       "Microsoft.Azure.Management.Fluent >= 1.37.0",
       "Microsoft.Azure.WebJobs.Extensions.Storage >= 3.0.10",
       "Microsoft.NET.Sdk.Functions >= 3.0.11",
-      "Training.AZ204.WebSIte >= 1.0.0"
+      "Training.AZ204.WebSIte >= 1.0.0",
+      "WebGrease >= 1.6.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\peter\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
+      "projectUniqueName": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
       "projectName": "Training.AZ204.Functions",
-      "projectPath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
+      "projectPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\obj\\",
+      "outputPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -12612,8 +12749,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj": {
-              "projectPath": "C:\\data\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj"
+            "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj": {
+              "projectPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj"
             }
           }
         }
@@ -12632,6 +12769,14 @@
             "target": "Package",
             "version": "[7.1.0, )"
           },
+          "Azure.Storage.Blobs": {
+            "target": "Package",
+            "version": "[12.9.0-beta.1, )"
+          },
+          "Azure.Storage.Queues": {
+            "target": "Package",
+            "version": "[12.7.0-beta.1, )"
+          },
           "Microsoft.Azure.Management.Fluent": {
             "target": "Package",
             "version": "[1.37.0, )"
@@ -12643,6 +12788,10 @@
           "Microsoft.NET.Sdk.Functions": {
             "target": "Package",
             "version": "[3.0.11, )"
+          },
+          "WebGrease": {
+            "target": "Package",
+            "version": "[1.6.0, )"
           }
         },
         "imports": [
@@ -12660,8 +12809,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Antlr 3.4.1.9004' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Antlr",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebGrease 1.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "WebGrease",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

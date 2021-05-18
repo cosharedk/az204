@@ -8,3 +8,9 @@ C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj
 C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\refactor.xml
 C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\postdeploy.sql
 C:\data\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\predeploy.sql
+F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.dacpac
+F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.dll
+F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.pdb
+F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.sqlprojAssemblyReference.cache
+F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.dll
+F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.pdb

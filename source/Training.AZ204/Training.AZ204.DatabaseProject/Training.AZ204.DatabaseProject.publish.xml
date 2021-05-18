@@ -5,6 +5,6 @@
     <TargetDatabaseName>MiniInvoiceSystem</TargetDatabaseName>
     <DeployScriptFileName>Training.AZ204.DatabaseProject.sql</DeployScriptFileName>
     <ProfileVersionNumber>1</ProfileVersionNumber>
-    <TargetConnectionString>Data Source=dti09052021.database.windows.net;Persist Security Info=True;User ID=peter;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=dti17052021.database.windows.net;Persist Security Info=True;User ID=peter;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>
   </PropertyGroup>
 </Project>
