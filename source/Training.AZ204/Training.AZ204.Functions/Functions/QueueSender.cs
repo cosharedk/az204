@@ -30,7 +30,10 @@ namespace Training.AZ204.Functions.Functions
             name = name ?? data?.name;
 
 
-            QueueClient queueClient = new QueueClient(System.Environment.GetEnvironmentVariable("StorageConnectionString"), "customers");
+            QueueClient queueClient = new QueueClient(System.Environment.GetEnvironmentVariable("StorageConnectionString"), "customers", new QueueClientOptions
+            {
+                MessageEncoding = QueueMessageEncoding.Base64
+            });
 
             queueClient.CreateIfNotExists();
 
