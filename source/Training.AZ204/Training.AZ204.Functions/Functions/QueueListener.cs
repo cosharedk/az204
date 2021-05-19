@@ -18,7 +18,7 @@ namespace Training.AZ204.Functions.Functions
             byte[] data = Convert.FromBase64String(myQueueItem);
             string decodedString = Encoding.UTF8.GetString(data);
 
-            Customer customer = System.Text.Json.JsonSerializer.Deserialize<Customer>(Convert.FromBase64String(decodedString));
+            Customer customer = System.Text.Json.JsonSerializer.Deserialize<Customer>(decodedString);
 
             MiniInvoiceContext ctx = new MiniInvoiceContext();
 
