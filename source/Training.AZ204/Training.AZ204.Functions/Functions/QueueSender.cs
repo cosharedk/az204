@@ -48,9 +48,7 @@ namespace Training.AZ204.Functions.Functions
                 WriteIndented = true
             };
 
-
             string jsonString = System.Text.Json.JsonSerializer.Serialize<Customer>(customer,options);
-
 
             byte[] buffer=Encoding.Unicode.GetBytes(jsonString);
 

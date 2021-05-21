@@ -15,8 +15,12 @@ namespace Training.AZ204.Functions.Functions
         {
             log.LogInformation($"C# Queue trigger function processed: {myQueueItem}");
 
+            
+
             byte[] data = Convert.FromBase64String(myQueueItem);
             string decodedString = Encoding.UTF8.GetString(data);
+
+
 
             Customer customer = System.Text.Json.JsonSerializer.Deserialize<Customer>(decodedString);
 

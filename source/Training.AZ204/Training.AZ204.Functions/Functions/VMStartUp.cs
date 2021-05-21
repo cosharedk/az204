@@ -43,7 +43,7 @@ namespace Training.AZ204.Functions.Functions
             var azure = Microsoft.Azure.Management.Fluent.Azure.Configure()
                 .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                 .Authenticate(context)
-                .WithSubscription("384d8b5c-5dd7-413e-aff1-df640d84aacf");
+                .WithSubscription(System.Environment.GetEnvironmentVariable("SubscriptionId"));
 
             //Henter alle vm's - men kan filtreres på bl.a. tags med Linq.
             var vms = azure.VirtualMachines.List();
@@ -57,7 +57,7 @@ namespace Training.AZ204.Functions.Functions
                 }
                 else
                 {
-                    log.LogInformation($"{vm.Name} is currently not in running-state");
+                    log.LogInformation($"{vm.Name} is currently in running-state");
                 }
             }
             
