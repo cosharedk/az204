@@ -8,6 +8,12 @@
         },
         "userObjectId":{
             "type": "string"
+        },
+        "storageaccountkeyvaulturl":{
+            "type": "string"
+        },
+        "storageaccountconnectionstring":{
+            "type": "string"
         }
     },
     "variables": {
@@ -27,8 +33,22 @@
             "properties": {
 
             }
+        },
+        {
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2018-11-01",
+            "name":"[variables('websitename')]",
+            "location":"[resourceGroup().location]",
+            "properties": {
+                "serverFarmId":"[resourceId(resourceGroup().name,'Microsoft.Web/serverFarms', variables('hostingname'))]"
+                
+           },
+           "dependsOn": [
+               "[resourceId(resourceGroup().name,'Microsoft.Web/serverFarms', variables('hostingname'))]"
+           ]
         }
     ],
     "outputs": {
 
+    }
     }

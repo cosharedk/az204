@@ -27,4 +27,6 @@ $outputKeyVault = New-AzResourceGroupDeployment -ResourceGroupName $prefix -Temp
 
 $parameters.Add('storageaccountkeyvaulturl',$outputKeyVault.Outputs["storageaccountsecreturi"].Value)
 
-$outputWebsite =New-AzResourceGroupDeployment -Resurcegroupname $prefix -TemplateFile .\Webapp-template.json -Name "DemoWebSite" -TemplateParameterObject $parameters
+$parameters
+
+$outputWebsite =New-AzResourceGroupDeployment -Resourcegroupname $prefix -TemplateFile .\Webapp-template.json -Name "DemoWebSite" -TemplateParameterObject $parameters
