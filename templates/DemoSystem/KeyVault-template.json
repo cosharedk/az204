@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "prefix":{
+            "type": "string",
+            "maxLength":11
+        },
+        "userObjectId":{
+            "type": "string"
+        },
+        "storageaccountconnectionstring": {
+            "type": "string"
+        }
+    },
+    "variables": {
+        "keyvaultname": "[concat(parameters('prefix'),'-keyvault')]"
+    },
+    "resources": [
+        {
+           "type": "Microsoft.KeyVault/vaults",
+           "apiVersion": "2020-04-01-preview",
+           "name":"[variables('keyvaultname')]",
+           "location":"[resourceGroup().location]",
+           "properties": {
+               "sku": {
+                   "name": "standard",
+                   "family": "A"
+               },
+               "enableSoftDelete": false,
+               "tenantId":"[subscription().tenantId]",
+               "accessPolicies": [
+                   {
+                   "tenantId":"[subscription().tenantId]",
+                   "objectId" : "[parameters('userObjectId')]",
+                   "permissions": {
+                       "secrets": [
+                          "get","list"
+                       ]
+                   }
+
+                   }
+               ]
+           }
+           
+           
+
+        },
+        {
+                "type": "Microsoft.KeyVault/vaults/secrets",
+                "apiVersion": "2019-09-01",
+                "name": "[concat(variables('keyVaultName'), '/', 'storageaccountconnectionstring')]",
+                "location": "[resourceGroup().location]",
+                "dependsOn": [
+                    "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
+                ],
+                "properties": {
+                    "value": "[parameters('storageaccountconnectionstring')]"
+                }
+    }
+    ],
+    "outputs":{
+            "storageaccountsecreturi": {
+            "type": "string",
+            "value": "[reference(resourceId('Microsoft.KeyVault/vaults/secrets', variables('keyVaultName'), 'storageaccountconnectionstring')).secretUri]"
+}
+}
+}

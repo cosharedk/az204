@@ -14,3 +14,13 @@ F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debu
 F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.sqlprojAssemblyReference.cache
 F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.dll
 F:\git\az204\az204\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.pdb
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.dacpac
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.dll
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\bin\Debug\Training.AZ204.DatabaseProject.pdb
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.sqlprojAssemblyReference.cache
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Model.xml
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\refactor.xml
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\postdeploy.sql
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\predeploy.sql
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.dll
+F:\data\git\source\Training.AZ204\Training.AZ204.DatabaseProject\obj\Debug\Training.AZ204.DatabaseProject.pdb

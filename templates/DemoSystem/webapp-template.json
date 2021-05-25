@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "prefix": {
+            "maxLength":11,
+            "type": "string"
+        },
+        "userObjectId":{
+            "type": "string"
+        }
+    },
+    "variables": {
+        "hostingname":"[concat(parameters('prefix'),'-hostingplan')]",
+        "websitename":"[concat(parameters('prefix'),'appservice')]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Web/serverfarms",
+            "apiVersion": "2018-02-01",
+            "name":"[variables('hostingname')]",
+            "location":"[resourceGroup().location]",
+            "sku": {
+                "tier": "Shared",
+                "name":"S1"
+            },
+            "properties": {
+
+            }
+        }
+    ],
+    "outputs": {
+
+    }

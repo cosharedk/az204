@@ -12724,11 +12724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
+      "projectUniqueName": "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
       "projectName": "Training.AZ204.Functions",
-      "projectPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
+      "projectPath": "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\obj\\",
+      "outputPath": "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.Functions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -12749,8 +12749,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj": {
-              "projectPath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj"
+            "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj": {
+              "projectPath": "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.WebSIte\\Training.AZ204.WebSIte.csproj"
             }
           }
         }

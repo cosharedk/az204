@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Hti9q5FYmCbqPwJSIqEM6mGS3XDLyq8+FQTkAS/5php1Xxxqb0NHhEaawDvMEK13ezwOCk5KP//vlDg3wFBIg==",
+  "dgSpecHash": "QpBEGp5dlc/M5/2mt81EiUN6HkL3WQs0IyBVkRKTHZ+FF9uvKXIHSs5oeEoV7X3VrWKwJj/boxlfD8FBDlwJrg==",
   "success": true,
-  "projectFilePath": "F:\\git\\az204\\az204\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
+  "projectFilePath": "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\peter\\.nuget\\packages\\antlr\\3.4.1.9004\\antlr.3.4.1.9004.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\azure.core\\1.9.0\\azure.core.1.9.0.nupkg.sha512",

@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "prefix": {
+            "maxLength":11,
+            "type": "string"
+        },
+        "userObjectId":{
+            "type": "string"
+        }
+    },
+    "variables": {
+        "storageaccountname":"[concat(parameters('prefix'),'storage')]",
+        "resourcegroupname" : "[resourceGroup().name]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2021-01-01",
+            "location":"[resourceGroup().location]",
+            "name":"[variables('storageaccountname')]",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2"
+        }
+
+    ],
+    "outputs": {  
+        "storageAccountConnectionString": {  
+            "type": "string",  
+            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(resourceId(variables('resourceGroupName'),'Microsoft.Storage/storageAccounts', variables('storageaccountname')), '2019-04-01').keys[0].value,';EndpointSuffix=core.windows.net')]"  
+        }
+    }  
+}
