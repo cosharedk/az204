@@ -27,6 +27,9 @@ $outputKeyVault = New-AzResourceGroupDeployment -ResourceGroupName $prefix -Temp
 
 $parameters.Add('storageaccountkeyvaulturl',$outputKeyVault.Outputs["storageaccountsecreturi"].Value)
 
-$parameters
-
 $outputWebsite =New-AzResourceGroupDeployment -Resourcegroupname $prefix -TemplateFile .\Webapp-template.json -Name "DemoWebSite" -TemplateParameterObject $parameters
+
+
+$svc =Get-AzADServicePrincipal -DisplayName ($prefix+'appservice')
+
+Set-AzKeyVaultAccessPolicy -VaultName ($prefix+'-keyvault') -ResourceGroupName $prefix -ObjectId $svc.Id -PermissionsToSecrets get,list

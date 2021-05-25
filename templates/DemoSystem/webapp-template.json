@@ -3,32 +3,32 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "prefix": {
-            "maxLength":11,
+            "maxLength": 11,
             "type": "string"
         },
-        "userObjectId":{
+        "userObjectId": {
             "type": "string"
         },
-        "storageaccountkeyvaulturl":{
+        "storageaccountkeyvaulturl": {
             "type": "string"
         },
-        "storageaccountconnectionstring":{
+        "storageaccountconnectionstring": {
             "type": "string"
         }
     },
     "variables": {
-        "hostingname":"[concat(parameters('prefix'),'-hostingplan')]",
-        "websitename":"[concat(parameters('prefix'),'appservice')]"
+        "hostingname": "[concat(parameters('prefix'),'-hostingplan')]",
+        "websitename": "[concat(parameters('prefix'),'appservice')]"
     },
     "resources": [
         {
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2018-02-01",
-            "name":"[variables('hostingname')]",
-            "location":"[resourceGroup().location]",
+            "name": "[variables('hostingname')]",
+            "location": "[resourceGroup().location]",
             "sku": {
                 "tier": "Shared",
-                "name":"S1"
+                "name": "S1"
             },
             "properties": {
 
@@ -37,18 +37,39 @@
         {
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
-            "name":"[variables('websitename')]",
-            "location":"[resourceGroup().location]",
+            "name": "[variables('websitename')]",
+            "location": "[resourceGroup().location]",
+            "identity": {
+                "type": "SystemAssigned"
+            },
+
             "properties": {
-                "serverFarmId":"[resourceId(resourceGroup().name,'Microsoft.Web/serverFarms', variables('hostingname'))]"
-                
-           },
-           "dependsOn": [
-               "[resourceId(resourceGroup().name,'Microsoft.Web/serverFarms', variables('hostingname'))]"
-           ]
+                "serverFarmId": "[resourceId(resourceGroup().name,'Microsoft.Web/serverFarms', variables('hostingname'))]"
+
+            },
+            "dependsOn": [
+                "[resourceId(resourceGroup().name,'Microsoft.Web/serverFarms', variables('hostingname'))]"
+            ],
+            "resources": [
+                {
+                    "type": "config",
+                    "name": "appsettings",
+                    "apiVersion": "2018-11-01",
+                    "properties": {
+                        "StorageAccountSecretUri": "[concat('@Microsoft.KeyVault(SecretUri=',parameters('storageaccountkeyvaulturl'),')')]"
+                    },
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', variables('webSiteName'))]"
+                    ]
+                }
+            ]
         }
+
     ],
     "outputs": {
-
+        "SiteUrl": {
+            "type": "string",
+            "value": "[concat('https',variables('websitename'),'.azurewebsites.net')]"
+        }
     }
-    }
+}

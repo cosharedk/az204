@@ -589,6 +589,22 @@
           "lib/netstandard2.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
+      "Microsoft.Azure.EventGrid/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.11, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.12, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.EventGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.EventGrid.dll": {}
+        }
+      },
       "Microsoft.Azure.KeyVault/3.0.1": {
         "type": "package",
         "dependencies": {
@@ -1119,6 +1135,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.dll": {}
+        }
+      },
+      "Microsoft.Azure.WebJobs.Extensions.EventGrid/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.EventGrid": "1.3.0",
+          "Microsoft.Azure.WebJobs": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.EventGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.EventGrid.dll": {}
         }
       },
       "Microsoft.Azure.WebJobs.Extensions.Http/3.0.2": {
@@ -5061,6 +5090,23 @@
         "microsoft.azure.amqp.nuspec"
       ]
     },
+    "Microsoft.Azure.EventGrid/1.3.0": {
+      "sha512": "LjrB8bknpLAe8x56tPeqKyKE945Y/wNTUqb/yScxqqdX/n0q+RsfUIf0P1V0pD3YoOkiAfqj2bxB0dYaT7zBvA==",
+      "type": "package",
+      "path": "microsoft.azure.eventgrid/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.EventGrid.dll",
+        "lib/net452/Microsoft.Azure.EventGrid.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.EventGrid.xml",
+        "lib/netstandard1.4/Microsoft.Azure.EventGrid.dll",
+        "lib/netstandard1.4/Microsoft.Azure.EventGrid.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.EventGrid.xml",
+        "microsoft.azure.eventgrid.1.3.0.nupkg.sha512",
+        "microsoft.azure.eventgrid.nuspec"
+      ]
+    },
     "Microsoft.Azure.KeyVault/3.0.1": {
       "sha512": "9//DmsIsjbKQG4USO8UnjQZOmbjyxNtESGh5xI/cm3Dq10rqf3Zik+G+GFaFyk0RALUvCRZVGoQIazCUw9SvEA==",
       "type": "package",
@@ -5557,6 +5603,18 @@
         "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.dll",
         "microsoft.azure.webjobs.extensions.3.0.6.nupkg.sha512",
         "microsoft.azure.webjobs.extensions.nuspec"
+      ]
+    },
+    "Microsoft.Azure.WebJobs.Extensions.EventGrid/2.1.0": {
+      "sha512": "fU5mA523E2f9UpBHP77y7ZfZ1UpRKnRIpYMXUEz0wuanmpZgy/OshoS8x6fgTqpLp1vKXLBIbpfy5uiYK3w0Sg==",
+      "type": "package",
+      "path": "microsoft.azure.webjobs.extensions.eventgrid/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.EventGrid.dll",
+        "microsoft.azure.webjobs.extensions.eventgrid.2.1.0.nupkg.sha512",
+        "microsoft.azure.webjobs.extensions.eventgrid.nuspec"
       ]
     },
     "Microsoft.Azure.WebJobs.Extensions.Http/3.0.2": {
@@ -12711,6 +12769,7 @@
       "Azure.Storage.Blobs >= 12.9.0-beta.1",
       "Azure.Storage.Queues >= 12.7.0-beta.1",
       "Microsoft.Azure.Management.Fluent >= 1.37.0",
+      "Microsoft.Azure.WebJobs.Extensions.EventGrid >= 2.1.0",
       "Microsoft.Azure.WebJobs.Extensions.Storage >= 3.0.10",
       "Microsoft.NET.Sdk.Functions >= 3.0.11",
       "Training.AZ204.WebSIte >= 1.0.0",
@@ -12780,6 +12839,10 @@
           "Microsoft.Azure.Management.Fluent": {
             "target": "Package",
             "version": "[1.37.0, )"
+          },
+          "Microsoft.Azure.WebJobs.Extensions.EventGrid": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Microsoft.Azure.WebJobs.Extensions.Storage": {
             "target": "Package",

@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[1.37.0, )"
             },
+            "Microsoft.Azure.WebJobs.Extensions.EventGrid": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Microsoft.Azure.WebJobs.Extensions.Storage": {
               "target": "Package",
               "version": "[3.0.10, )"

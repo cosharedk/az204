@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QpBEGp5dlc/M5/2mt81EiUN6HkL3WQs0IyBVkRKTHZ+FF9uvKXIHSs5oeEoV7X3VrWKwJj/boxlfD8FBDlwJrg==",
+  "dgSpecHash": "Lb4nyrHkk99lTscpMHIMjqY0PRJz2h0fNgLV1Wannr+3vsrH4UDV9wW2Pe5u2kVoQ85hGYjxTA9+jhNiNznbBA==",
   "success": true,
   "projectFilePath": "F:\\data\\git\\source\\Training.AZ204\\Training.AZ204.Functions\\Training.AZ204.Functions.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.1.0\\microsoft.aspnetcore.routing.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.1.1\\microsoft.aspnetcore.webutilities.2.1.1.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.amqp\\2.4.9\\microsoft.azure.amqp.2.4.9.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.eventgrid\\1.3.0\\microsoft.azure.eventgrid.1.3.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.keyvault\\3.0.1\\microsoft.azure.keyvault.3.0.1.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.keyvault.webkey\\3.0.1\\microsoft.azure.keyvault.webkey.3.0.1.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.management.appservice.fluent\\1.37.0\\microsoft.azure.management.appservice.fluent.1.37.0.nupkg.sha512",
@@ -74,6 +75,7 @@
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs\\3.0.23\\microsoft.azure.webjobs.3.0.23.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs.core\\3.0.23\\microsoft.azure.webjobs.core.3.0.23.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs.extensions\\3.0.6\\microsoft.azure.webjobs.extensions.3.0.6.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs.extensions.eventgrid\\2.1.0\\microsoft.azure.webjobs.extensions.eventgrid.2.1.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs.extensions.http\\3.0.2\\microsoft.azure.webjobs.extensions.http.3.0.2.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs.extensions.storage\\3.0.10\\microsoft.azure.webjobs.extensions.storage.3.0.10.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microsoft.azure.webjobs.host.storage\\3.0.14\\microsoft.azure.webjobs.host.storage.3.0.14.nupkg.sha512",
